@@ -77,7 +77,7 @@ File f;
 
         jLabel1.setFont(new java.awt.Font("Tempus Sans ITC", 0, 48)); // NOI18N
         jLabel1.setText("Enviar Documento");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 380, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 380, -1));
 
         btnEnviar.setText("Enviar Archivo");
         btnEnviar.addActionListener(new java.awt.event.ActionListener() {
@@ -108,6 +108,11 @@ File f;
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 149, 42, -1));
 
         jTextPuerto.setText("21");
+        jTextPuerto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextPuertoActionPerformed(evt);
+            }
+        });
         getContentPane().add(jTextPuerto, new org.netbeans.lib.awtextra.AbsoluteConstraints(195, 174, 78, -1));
 
         jLabel3.setText("Protocolo :");
@@ -191,6 +196,10 @@ File f;
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
         jTextField1.setText("");
     }//GEN-LAST:event_btnCancelarActionPerformed
+
+    private void jTextPuertoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextPuertoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextPuertoActionPerformed
 
     /**
      * @param args the command line arguments

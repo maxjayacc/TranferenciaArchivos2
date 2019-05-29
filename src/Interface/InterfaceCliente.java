@@ -51,6 +51,10 @@ public class InterfaceCliente {
             
             System.out.println("Autentificación: " + login);
             
+            
+            client.setFileType(FTP.BINARY_FILE_TYPE, FTP.BINARY_FILE_TYPE);
+            client.setFileTransferMode(FTP.BINARY_FILE_TYPE);
+            
             client.setFileType(FTP.BINARY_FILE_TYPE, FTP.BINARY_FILE_TYPE);
             client.setFileTransferMode(FTP.BINARY_FILE_TYPE);
           
